@@ -1,0 +1,141 @@
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeIn 1s ease;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Sections */
+.about-section {
+  margin-bottom: 60px;
+  animation: slideUp 1s ease;
+}
+
+.about-section h2 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Features */
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background: #e8f5e9;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Team */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.team-member {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member h4 {
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media(max-width:768px) {
+  .features-container, .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
