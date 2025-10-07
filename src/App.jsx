@@ -18,19 +18,21 @@ function App() {
 
   return (
     <>
-      <Provider store={store}>
-        <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<IntroPage />} />
-            <Route path="/home" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/login" element={<LoginPage />} />
-          </Routes>
-        </BrowserRouter>
-        <Footer />
-      </Provider>
+     
+
+
+<BrowserRouter basename="/planthub">
+  <Navbar />
+  <Routes>
+    <Route path="/" element={<IntroPage />} />
+    <Route path="/home" element={<HomePage />} />
+    <Route path="/about" element={<AboutPage />} />
+    <Route path="/contact" element={<ContactPage />} />
+    <Route path="/login" element={<LoginPage />} />
+  </Routes>
+  <Footer />
+</BrowserRouter>
+
     </>
   );
 }
