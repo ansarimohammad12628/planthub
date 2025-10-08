@@ -9,7 +9,7 @@
 /* Hero Section */
 .about-hero {
   text-align: center;
-  margin-bottom: 60px;
+  margin: 60px 0;
   animation: fadeIn 1s ease;
 }
 

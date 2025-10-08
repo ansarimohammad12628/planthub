@@ -1,6 +1,8 @@
 import React from "react";
 import "../Css/AboutPage.css";
 
+import manphoto from "../Images/JPG/manphoto.jpg"
+
 const AboutPage = () => {
   return (
     <section className="about-page">
@@ -61,7 +63,7 @@ const AboutPage = () => {
         </p>
         <div className="team-container">
           <div className="team-member">
-            <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a3?auto=format&fit=crop&w=200&q=80" alt="Team Member" />
+          <img src={manphoto} alt="Team Member" />
             <h4>Jane Doe</h4>
             <p>Founder & Botanist</p>
           </div>

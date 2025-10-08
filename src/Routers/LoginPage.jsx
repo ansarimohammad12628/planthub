@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Css/LoginPage.css";
+import gardenplant from "../Images/JPG/gardenphoto.jpg"
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -16,7 +17,7 @@ const LoginPage = () => {
       <div className="login-container">
         <div className="login-left">
           <img
-            src="https://images.unsplash.com/photo-1603415526960-6b9c9a9b631d?auto=format&fit=crop&w=400&q=80"
+            src={gardenplant}
             alt="Money Plant"
           />
         </div>

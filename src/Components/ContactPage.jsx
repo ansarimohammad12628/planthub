@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../Css/ContactPage.css";
 
+import plants from "../Images/JPG/plantsphoto.jpg"
+
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,7 +26,7 @@ const ContactPage = () => {
         {/* Left: Contact Image */}
         <div className="contact-left">
     <img
-  src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Money_Plant_in_a_pot.jpg"
+  src={plants}
   alt="Money Plant"
 />
 
