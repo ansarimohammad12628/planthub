@@ -89,5 +89,8 @@
 
 @media(max-width:768px) {
   .plants-container { gap: 20px; }
-  .plant-card img { height: 180px; }
+  .plant-card img { height: 180px;
+    width: 200px;
+   }
+
 }
