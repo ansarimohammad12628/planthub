@@ -12,14 +12,14 @@ import LoginPage from "./Routers/LoginPage";
 import AboutPage from "./Components/AboutPage";
 import ContactPage from "./Components/ContactPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Cart from "./Components/Cart";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-     
-
+    <Provider store={store}>
 
 <BrowserRouter basename="/planthub">
   <Navbar />
@@ -28,10 +28,12 @@ function App() {
     <Route path="/home" element={<HomePage />} />
     <Route path="/about" element={<AboutPage />} />
     <Route path="/contact" element={<ContactPage />} />
+    <Route path="/cart" element={<Cart />} />
     <Route path="/login" element={<LoginPage />} />
   </Routes>
   <Footer />
 </BrowserRouter>
+    </Provider>
 
     </>
   );

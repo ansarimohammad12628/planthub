@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Css/Navbar.css";
 import { Link } from "react-router-dom";
+// import cart from "../assets/Image/svg/basket-svgrepo-com (4).svg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,15 +30,14 @@ const Navbar = () => {
 
         {/* Right Side: Menu Links */}
         <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <Link to="/home">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/cart">
+           Cart
+          </Link>
 
-            
-          <Link to="/"><a > </a></Link>
-          <Link to="/home"><a>Home</a></Link>
-          <Link  to="/about"><a>About </a></Link>
-          <Link to="/contact"><a>Contact </a></Link>
-          <Link to="/login"><a>Login </a></Link>
-         
-        
+          <Link to="/login">Login</Link>
         </nav>
 
         {/* Mobile Menu Button */}

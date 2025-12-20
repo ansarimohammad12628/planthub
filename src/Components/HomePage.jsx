@@ -15,6 +15,8 @@ import spiderplant from "../Images/PNG/spiderplant.png";
 import englishivy from "../Images/PNG/enlishivy.png";
 import golden from "../Images/PNG/goldenpothos.png";
 import bonsai from "../Images/PNG/bonsaiplant.png"
+import { useDispatch } from "react-redux";
+import { addtocart } from "../Features/userSlice";
 
 
 const plantsData = [
@@ -36,9 +38,11 @@ const plantsData = [
 ];
 
 const HomePage = () => {
-  const handleAddToCart = (plant) => {
-    alert(`${plant.name} added to cart!`);
-  };
+
+  const dispatch = useDispatch();
+  // const handleAddToCart = (plant) => {
+  //   alert(`${plant.name} added to cart!`);
+  // };
 
   return (
     <section className="home-page">
@@ -60,7 +64,7 @@ const HomePage = () => {
             <img src={plant.image} alt={plant.name} />
             <h3>{plant.name}</h3>
             <p>{plant.info}</p>
-            <button onClick={() => handleAddToCart(plant)}>Add to Cart</button>
+            <button className="addtocart" onClick= {() => dispatch(addtocart(plant))}>Add to Cart</button>
           </div>
         ))}
       </div>

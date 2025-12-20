@@ -3,6 +3,6 @@ import plantsReducer from "../Features/userSlice.js";
 
 export const store = configureStore({
   reducer: {
-    plantshop: plantsReducer,
+    users: plantsReducer,
   },
 });
